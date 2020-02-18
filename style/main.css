@@ -1,0 +1,96 @@
+@font-face {
+   font-family: "Montserrat";
+   src: url("../fonts/Montserrat-Light.ttf") format("truetype");
+   font-weight: 300;
+   font-style: light;
+}
+
+@font-face {
+   font-family: "Montserrat-bold";
+   src: url("../fonts/Montserrat-Light.ttf") format("truetype");
+   font-weight: 600;
+   font-style: semibold;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+   font-family: "Montserrat", sans-serif;
+   color: black;
+   margin: 0px;
+}
+
+body {
+   margin: 0px;
+}
+
+/* FIRST BLOCK - MAIN INFORMATION */
+
+.main-information {
+   height: 100vh;
+   width: 100vw;
+   background-color: white;
+
+   display: grid;
+   grid-template-columns: 1fr 70% 1fr;
+   grid-template-rows: 20% 1fr 20%;
+
+   transition: all;
+   transition-duration: 1s;
+}
+
+.main-information .blank {
+   box-sizing: border-box;
+   height: 100%;
+   width: 100%;
+   background-color: white;
+
+   grid-row: 2 / 3;
+   grid-column: 2 / 3;
+
+   display: grid;
+   grid-template-columns: 1fr 300px 20px 600px 1fr;
+   grid-template-rows: 1fr 100px 100px 100px 100px 1fr;
+
+   transition: all;
+   transition-duration: 0.5s;
+}
+
+.avatar {
+   height: 100%;
+   width: 100%;
+   background-image: url("../style/avatar.jpeg");
+   background-size: cover;
+
+   grid-column: 2 / 3;
+   grid-row: 2 / 6;
+}
+
+.main-information h2 {
+   font-size: 60px;
+   font-weight: 600;
+
+   grid-column: 4 / 5;
+   grid-row: 2 / 3;
+}
+
+.main-information p {
+   font-size: 24px;
+
+   grid-column: 4 / 5;
+   grid-row: 3 / 5;
+}
+
+.main-information h3 {
+   grid-column: 4 / 5;
+   grid-row: 5 / 6;
+}
+
+.main-information .blank:hover {
+   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.082);
+}
