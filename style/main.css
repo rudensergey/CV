@@ -115,14 +115,39 @@ body {
 .social .tip {
    font-family: "Montserrat";
    font-size: 15px;
-   color: rgb(80, 80, 80);
    position: fixed;
    padding: 15px 30px;
    background-color: white;
    border-radius: 3px;
    font-weight: 600;
-
-   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.178);
-
    z-index: 3;
+
+   animation-name: appearence;
+   animation-duration: 0.5s;
+   animation-fill-mode: forwards;
+   animation-timing-function: cubic-bezier(.55,.08,.77,.9);
+
+}
+
+@keyframes appearence {
+   0% {
+      color: rgb(255, 255, 255);
+      transform: translateY(3px);
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+      opacity: 0;
+   }
+
+   50% { 
+      color: rgb(80, 80, 80);
+      transform: translateY(3px); 
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+      opacity: 1;
+   }
+
+   100% { 
+      color: rgb(80, 80, 80);
+      transform: translateY(0px); 
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.178);
+      opacity: 1;
+   }
 }
