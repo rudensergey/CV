@@ -111,3 +111,18 @@ body {
 .social img:hover {
    opacity: 1;
 }
+
+.social .tip {
+   font-family: "Montserrat";
+   font-size: 15px;
+   color: rgb(80, 80, 80);
+   position: fixed;
+   padding: 15px 30px;
+   background-color: white;
+   border-radius: 3px;
+   font-weight: 600;
+
+   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.178);
+
+   z-index: 3;
+}
