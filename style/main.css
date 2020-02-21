@@ -260,7 +260,7 @@ body {
    left: 300px;
    top: 400px;
    width: 1200px;
-   background-image: url("../style/mount.png");
+   background-image: url("https://github.com/rudensergey/CV/blob/master/style/mount.png?raw=true");
    background-size: cover;
    z-index: 0;
    transform: rotateZ(-5deg);
