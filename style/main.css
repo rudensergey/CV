@@ -38,7 +38,7 @@ body {
    grid-template-rows: 1fr min-content 20px min-content 20px min-content 20px min-content 40px min-content 1fr;
    justify-items: center;
    align-items: center;
-   z-index: -1;
+   z-index: -2;
    overflow: hidden;
 }
 
@@ -199,7 +199,7 @@ body {
    height: 500px;
    width: 500px;
    background-color: rgba(206, 126, 126, 0.151);
-   z-index: 0;
+   z-index: 1;
 
    animation-name: flying;
    animation-duration: 30s;
@@ -214,7 +214,7 @@ body {
    height: 500px;
    width: 500px;
    background-color: rgba(34, 225, 250, 0.158);
-   z-index: 0;
+   z-index: 1;
    transform: rotateZ(105deg);
    top: 500px;
 
@@ -252,4 +252,17 @@ body {
       left: 1000px;
       top: 500px;
    }
+}
+
+.wallpaper {
+   position: fixed;
+   height: 500px;
+   left: 300px;
+   top: 400px;
+   width: 1200px;
+   background-image: url("../style/mount.png");
+   background-size: cover;
+   z-index: 0;
+   transform: rotateZ(-5deg);
+   opacity: 0.4;
 }
