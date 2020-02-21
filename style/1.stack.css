@@ -1,5 +1,24 @@
 .main-stack {
-    height: 500px;
-    width: 100vw;
-    background-color: lightcoral;
+    margin: 30px 30px 30px 30px;
+    justify-content: center;
+    display: grid;
+    grid-gap: 10px 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.main-stack .technology {
+    height: 320px;
+    border-radius: 3px;
+    background-color: rgb(218, 143, 58);
+    box-shadow: 0px 0px 0px rgb(255, 255, 255);
+    
+    transition: all;
+    transition-duration: 0.5s;
+    z-index: 1;
+}
+
+.main-stack .technology:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.144);
+    z-index: 2;
 }
