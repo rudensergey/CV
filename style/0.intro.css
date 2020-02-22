@@ -133,7 +133,6 @@
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(.55,.08,.77,.9);
- 
  }
  
  @keyframes appearence {

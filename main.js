@@ -22,3 +22,23 @@ social.addEventListener('mouseout', function(event) {
     if (!event.target.dataset.social) return
     document.getElementById('tip').remove()
 })
+
+// main stack logic
+
+let collection = document.getElementById('main-stack').getElementsByClassName('technology');
+for (let elemNumber in collection) {
+    let element = collection[elemNumber]
+    element.style.backgroundColor = element.dataset.color
+
+    let logo = document.createElement('div')
+    logo.className = 'logo';
+    alert(logo.backgroundImage)
+
+    let name = document.createElement('p')
+    name.className = 'name';
+    name.innerHTML = element.dataset.name;
+
+    element.append(logo)
+    element.append(name)
+    logo.backgroundImage = 'url("' + element.dataset.path + '")';
+}
