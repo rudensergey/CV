@@ -25,6 +25,7 @@
     padding: 20px 30px;
    font-size: 30px;
    font-weight: 300px;
+   cursor: pointer;
 
    transition: all;
 }
