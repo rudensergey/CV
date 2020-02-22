@@ -32,7 +32,7 @@ for (let elemNumber in collection) {
 
     let logo = document.createElement('div')
     logo.className = 'logo';
-    alert(logo.backgroundImage)
+    logo.style.backgroundImage = 'url("' + element.dataset.path + '")';
 
     let name = document.createElement('p')
     name.className = 'name';
@@ -40,5 +40,4 @@ for (let elemNumber in collection) {
 
     element.append(logo)
     element.append(name)
-    logo.backgroundImage = 'url("' + element.dataset.path + '")';
 }
