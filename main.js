@@ -27,17 +27,17 @@ social.addEventListener('mouseout', function(event) {
 
 let collection = document.getElementById('main-stack').getElementsByClassName('technology');
 for (let elemNumber in collection) {
-    let element = collection[elemNumber]
-    element.style.backgroundColor = element.dataset.color
+    let elemenet = collection[elemNumber]
+    elemenet.style.backgroundColor = elemenet.dataset.color
 
     let logo = document.createElement('div')
     logo.className = 'logo';
-    logo.style.backgroundImage = 'url("' + element.dataset.path + '")';
+    logo.style.backgroundImage = 'url("' + elemenet.dataset.path + '")';
 
     let name = document.createElement('p')
     name.className = 'name';
-    name.innerHTML = element.dataset.name;
+    name.innerHTML = elemenet.dataset.name;
 
-    element.append(logo)
-    element.append(name)
+    elemenet.append(logo)
+    elemenet.append(name)
 }
