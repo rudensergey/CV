@@ -23,9 +23,30 @@ social.addEventListener('mouseout', function(event) {
     document.getElementById('tip').remove()
 })
 
+// main stack buttons for sort
+
+let mainStack = document.getElementById('main-stack');
+
+mainStack.addEventListener('click', function(event) {
+    if (event.target.id === 'frontendButton') {
+        let elements = mainStack.getElementsByClassName('technology');
+        for (let elem in elements) {
+            if (elements[elem].dataset.tag === 'backend') elements[elem].remove()
+        }
+
+    } else if (event.target.id === 'backendButton') {
+        let elements = mainStack.getElementsByClassName('technology');
+        for (let elem in elements) {
+            if (elements[elem].dataset.tag === 'frontend') {
+                elements[elem].remove()
+            }
+        }
+    }
+})
+
 // main stack logic
 
-let collection = document.getElementById('main-stack').getElementsByClassName('technology');
+let collection = mainStack.getElementsByClassName('technology');
 for (let elemNumber in collection) {
     let elemenet = collection[elemNumber]
     elemenet.style.backgroundColor = elemenet.dataset.color
